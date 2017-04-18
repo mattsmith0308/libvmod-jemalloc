@@ -3,6 +3,7 @@ AC_COPYRIGHT([Copyright (c) 2011-2016 Varnish Software AS])
 AC_INIT([libvmod-jemalloc], [trunk])
 AC_CONFIG_MACRO_DIR([m4])
 m4_ifndef([VARNISH_VMOD_INCLUDES], AC_MSG_ERROR([Need varnish.m4 -- see README.rst]))
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 AC_CONFIG_SRCDIR(src/vmod_jemalloc.vcc)
 AM_CONFIG_HEADER(config.h)
 
